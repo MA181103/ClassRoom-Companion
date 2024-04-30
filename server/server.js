@@ -11,7 +11,7 @@ import {PdfReader} from "pdfreader";
 const upload = multer({ dest: 'uploads/' });
 const puppeteer = import('puppeteer');
 const configuration = new Configuration({
-  apiKey: "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",
+  apiKey: "",
 });
 
 const openai = new OpenAIApi(configuration);
