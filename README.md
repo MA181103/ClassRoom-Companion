@@ -1,4 +1,3 @@
-Consists of a Chatbot, Faculty InfoHub, FAQ generator for simplifying college student’s life
 <br>
 • Uses OpenAI API for Chatbot, FAQ Generator
 <br>
