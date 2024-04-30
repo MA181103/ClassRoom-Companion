@@ -1,0 +1,12 @@
+<form (ngSubmit)="onSubmit()">
+  <input type="text" [(ngModel)]="ticker" name="ticker" placeholder="Ticker symbol">
+  <button type="submit">Analyze</button>
+</form>
+
+<div *ngIf="result">
+  <h2>{{ result.decision}}</h2>
+  <p>{{ result.analysis }}</p>
+  <p>{{ result.esg }}</p>
+  <p>{{ result.sentiment }}</p>
+  <p>{{ result.extra }}</p>
+</div>

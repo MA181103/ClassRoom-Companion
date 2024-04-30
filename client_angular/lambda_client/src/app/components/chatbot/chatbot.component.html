@@ -1,0 +1,64 @@
+<div id="app">
+<div id="chat_container" #chatContainer>
+  <br>
+
+  <div style="height: 100%;width:100%;justify-content:center;align-items:center;margin-top: 150px;" *ngIf="!isShowDivIf">
+    <mat-grid-list cols="3" rowHeight="100px" gutterSize="30px 0px">
+
+      <mat-grid-tile *ngIf="!isShowDivIf">
+        <mat-card class="example-card">
+          <mat-card-content>
+<!--            <button (click)="handleSubmit($event)">-->
+<!--              How can I create a new API using CoolAPI in Java?-->
+<!--            </button>-->
+            <div class="my-card" (click)= "onPromptClicked('How can I create a new API using CoolAPI in Java?')">How can I create a new API using CoolAPI in Java?</div>
+         </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile *ngIf="!isShowDivIf">
+        <mat-card class="example-card">
+          <mat-card-content>
+            <div class="my-card" (click)="onPromptClicked('How can I optimize the performance of my CoolAPI endpoints in Java?')">How can I optimize the performance of my CoolAPI endpoints in Java?</div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile *ngIf="!isShowDivIf">
+        <mat-card class="example-card">
+          <mat-card-content>
+            <div class="my-card" (click)="onPromptClicked('How do I get started with Python at BLK?')">How do I get started with Python at BLK?</div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile *ngIf="!isShowDivIf">
+        <mat-card class="example-card">
+          <mat-card-content>
+            <p class="my-card">How do I set up BMS based application in java language?</p>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile *ngIf="!isShowDivIf">
+        <mat-card class="example-card">
+          <mat-card-content>
+            <p class="my-card">How do I generate agraph stub in python ?</p>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile *ngIf="!isShowDivIf">
+        <mat-card class="example-card">
+          <mat-card-content>
+            <p class="my-card">Are agraph and open source framework graphql related?</p>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+
+</div>
+<form #formRef>
+  <section>
+    
+  </section>
+  <textarea class="my-card" name="prompt" rows="1" cols="1" placeholder="Ask me Anything..."></textarea>
+  <button type="submit" (click)="toggleDisplayDivIf()"><img src="assets/send.svg" alt="send" /></button>
+</form>
+</div>

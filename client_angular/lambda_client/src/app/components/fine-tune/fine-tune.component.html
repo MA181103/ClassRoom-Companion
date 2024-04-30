@@ -1,0 +1,16 @@
+<mat-card class="example-card">
+  <h2>Summarise your PDF </h2>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill" style="margin: 16px;padding:16px;width: 80%">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name">
+    </mat-form-field>
+  
+<!--    <mat-form-field appearance="fill" style="margin: 16px;padding:16px;width: 80%">-->
+<!--      <mat-label>Answer</mat-label>-->
+   <input type="file" (change)="onFileSelected($event)" accept=".pdf">
+<!--    </mat-form-field>-->
+    <br>
+    <button mat-raised-button color="primary" type="submit" style="margin: 30px;padding:16px;background-color: orangered">Submit</button>
+  </form>
+</mat-card>

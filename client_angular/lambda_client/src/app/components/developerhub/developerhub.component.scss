@@ -1,0 +1,85 @@
+
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.ag-theme-alpine {
+  font-size: 14px;
+}
+
+.ag-header-cell-label,
+.ag-cell-value {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+}
+.example-card {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+  0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+
+
+
+.form-field {
+  width: 30%;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.submit-button {
+  margin-top: 16px;
+}
+.form-container {
+justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .form-container {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
